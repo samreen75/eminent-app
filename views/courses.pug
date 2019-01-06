@@ -1,0 +1,201 @@
+extends nav
+
+block append content
+    .hero-wrap
+      .overlay
+      .circle-bg
+      .circle-bg-2
+      .container-fluid
+        .row.no-gutters.d-flex.slider-text.align-items-center.justify-content-center(data-scrollax-parent='true')
+          .col-md-6.ftco-animate.text-center(data-scrollax=" properties: { translateY: '70%' }")
+            p.breadcrumbs(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }")
+              span.mr-2
+                a(href='index.html') Home
+              span Domain
+            h1.mb-3.bread(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }") Courses Offered
+    section.ftco-section.bg-light
+      .container
+        .row.justify-content-center.mb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            span.subheading Get domain
+            h2.mb-4 Get A Domain Name
+            p With FREE Email, DNS, Theft Protection, and other features
+        .row.justify-content-center
+          .col-md-10.ftco-animate
+            form.domain-form(action='#')
+              .form-group.d-md-flex
+                input.form-control.px-4(type='text' placeholder='Enter your domain name...')
+                input.search-domain.btn.btn-primary.px-5(type='submit' value='Search Domain')
+            p.domain-price.text-center
+              span
+                small .com
+                |  9.75
+              span
+                small .net
+                |  9.90
+              span
+                small .biz
+                |  $8.95
+              span
+                small .me
+                |  $7.95
+    section.ftco-section
+      .container
+        .row.justify-content-center.mb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            span.subheading Pricing Plans
+            h2.mb-4 Domain Pricing
+        .row
+          .col-md-12.ftco-animate
+            .table-responsive
+              table.table
+                thead.thead-primary
+                  tr
+                    th TLD
+                    th Duration
+                    th Registration
+                    th Renewal
+                    th Transfer
+                tbody
+                  tr
+                    td .com
+                    td 1 Year
+                    td $70.00
+                    td $5.00
+                    td $5.00
+                  tr
+                    td .net
+                    td 1 Year
+                    td $75.00
+                    td $5.00
+                    td $5.00
+                  tr
+                    td .org
+                    td 1 Year
+                    td $65.00
+                    td $5.00
+                    td $5.00
+                  tr
+                    td .biz
+                    td 1 Year
+                    td $60.00
+                    td $5.00
+                    td $5.00
+                  tr
+                    td .info
+                    td 1 Year
+                    td $50.00
+                    td $5.00
+                    td $5.00
+                  tr
+                    td .me
+                    td 1 Year
+                    td $45.00
+                    td $5.00
+                    td $5.00
+    section.ftco-section.bg-light
+      .container
+        .row.justify-content-center.mb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            span.subheading Facts
+            h2.mb-4 Your Question
+        .row
+          .col-md-12.ftco-animate
+            #accordion
+              .row
+                .col-md-6
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menuone' aria-expanded='true' aria-controls='menuone')
+                        | What is your domain name? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menuone.collapse.show
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menutwo' aria-expanded='false' aria-controls='menutwo')
+                        | How long is my domain name valid? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menutwo.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menu3' aria-expanded='false' aria-controls='menu3')
+                        | Can I sell my domain name? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menu3.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                .col-md-6
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menu4' aria-expanded='false' aria-controls='menu4')
+                        | Can I cancel a domain? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menu4.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menu5' aria-expanded='false' aria-controls='menu5')
+                        | How do I transfer a domain name? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menu5.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menu6' aria-expanded='false' aria-controls='menu6')
+                        | How do I setup URL forwarding? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menu6.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+    include footer
+    #ftco-loader.show.fullscreen
+      svg.circular(width='48px' height='48px')
+        circle.path-bg(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee')
+        circle.path(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00')
+    script(src='/javascripts/js/jquery.min.js')
+    script(src='/javascripts/js/jquery-migrate-3.0.1.min.js')
+    script(src='/javascripts/js/popper.min.js')
+    script(src='/javascripts/js/bootstrap.min.js')
+    script(src='/javascripts/js/jquery.easing.1.3.js')
+    script(src='/javascripts/js/jquery.waypoints.min.js')
+    script(src='/javascripts/js/jquery.stellar.min.js')
+    script(src='/javascripts/js/owl.carousel.min.js')
+    script(src='/javascripts/js/jquery.magnific-popup.min.js')
+    script(src='/javascripts/js/aos.js')
+    script(src='/javascripts/js/jquery.animateNumber.min.js')
+    script(src='/javascripts/js/bootstrap-datepicker.js')
+    script(src='/javascripts/js/jquery.timepicker.min.js')
+    script(src='/javascripts/js/scrollax.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+    script(src='/javascripts/js/google-map.js')
+    script(src='/javascripts/js/main.js')

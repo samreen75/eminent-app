@@ -1,0 +1,353 @@
+doctype html
+// popup
+head
+  meta(charset='utf-8')
+  title contact
+  style(type='text/css').
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    body {
+    background-image: url("conbg.jpg") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height=100%;
+    border-color: #555 transparent transparent transparent;
+    overflow: hidden;
+    }
+    h2
+    {
+    background-color: bisque;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    width: 340px;
+    margin-left: 50px;
+    margin-top: 20px;
+    }
+    .wpcf7-text
+    {
+    background-color: bisque;
+    text-align: left-side;
+    color: black;
+    display: inline-block;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius : 10px;
+    }
+    a{
+    text-decoration: none;
+    display : inline-block;
+    padding: 8px 16px;
+    font-size: 25px;
+    }
+    a:hover{
+    background-color: yellow;
+    color : red;
+    }
+    .previous{
+    background-color: #f1f1f1;
+    color: black;
+    border-radius : 15px;
+    }
+    .wpcf7-submit{
+    }
+div
+  h2.req Request For a Free Demo Class
+  form#contact-form.wpcf7(method='post')
+    fieldset
+      span.wpcf7-form-control-wrap.your-name
+        input#contact-name.wpcf7-text(name='name', placeholder='Full Name', required='')
+    fieldset
+      span.wpcf7-form-control-wrap.your-email
+        input#contact-email.wpcf7-text(type='email', name='email', placeholder='Email address', required='')
+    fieldset
+      span.wpcf7-form-control-wrap.your-phone
+        input#contact-website1.wpcf7-text(type='text', maxlength='10', name='phone', onkeypress='return isNumber(event)', placeholder='Mobile', required='')
+    fieldset
+      span.wpcf7-form-control-wrap.your-course
+        select#contact-course.wpcf7-text.course_list_select(name='course', required='')
+          option(value='')
+            | Select Course Name
+            optgroup(label='Java Training')
+              option(value='Core Java')
+                | Core Java
+              option(value='Spring')
+                | Spring
+              option(value='J2EE')
+                | J2EE
+              option(value='Struts')
+                | Struts
+              option(value='Hibernate')
+                | Hibernate
+                optgroup(label='Database Developer')
+                  option(value='Oracle')
+                    | Oracle
+                  option(value='Teradata')
+                    | Teradata
+                  option(value='Informix')
+                    | Informix
+                  option(value='Sybase')
+                    | Sybase
+                  option(value='MongoDB')
+                    | MongoDB
+                  option(value='Apache Cassandra')
+                    | Apache Cassandra
+                    optgroup(label='DBA')
+                      option(value='Oracle DBA')
+                        | Oracle DBA
+                      option(value='RAC')
+                        | RAC
+                      option(value='Dataguard')
+                        | Dataguard
+                      option(value='Oracle Apps DBA')
+                        | Oracle Apps DBA
+                      option(value='Performance Tuning')
+                        | Performance Tuning
+                      option(value='SQL Server DBA')
+                        | SQL Server DBA
+                      option(value='DB2 DBA UDB')
+                        | DB2 DBA UDB
+                      option(value='Teradata DBA')
+                        | Teradata DBA
+                        optgroup(label='IBM')
+                          option(value='Mainframe Developer')
+                            | Mainframe Developer
+                          option(value='Mainframe Admin')
+                            | Mainframe Admin
+                          option(value='Websphere Appln Server')
+                            | Websphere Appln Server
+                          option(value='WebSphere MQ System Admin')
+                            | WebSphere MQ System Admin
+                          option(value='WebSphere Message Broker')
+                            | WebSphere Message Broker
+                            optgroup(label='Microsoft')
+                              option(value='.Net')
+                                | .Net
+                              option(value='MVC')
+                                | MVC
+                              option(value='WCF & WPF')
+                                | WCF &amp; WPF
+                              option(value='Sharepoint Developer')
+                                | Sharepoint Developer
+                              option(value='Sharepoint Admin')
+                                | Sharepoint Admin
+                              option(value='SCCM 2012')
+                                | SCCM 2012
+                              option(value='Microsoft Dynamics')
+                                | Microsoft Dynamics
+                                optgroup(label='Cloud Computing')
+                                  option(value='Amazon Web Services')
+                                    | Amazon Web Services
+                                  option(value='SalesForce')
+                                    | SalesForce
+                                  option(value='OpenStack')
+                                    | OpenStack
+                                  option(value='Open Nebula')
+                                    | Open Nebula
+                                  option(value='VMWare V Cloud')
+                                    | VMWare V Cloud
+                                  option(value='Workday Training')
+                                    | Workday Training
+                                    optgroup(label='Oracle Applications')
+                                      option(value='Apps Finance')
+                                        | Apps Finance
+                                      option(value='Apps SCM')
+                                        | Apps SCM
+                                      option(value='Apps HRMS')
+                                        | Apps HRMS
+                                      option(value='Apps Technical')
+                                        | Apps Technical
+                                      option(value='Peoplesoft Finance')
+                                        | Peoplesoft Finance
+                                      option(value='Peoplesoft HCM')
+                                        | Peoplesoft HCM
+                                        optgroup(label='Server maintenance')
+                                          option(value='Linux admin')
+                                            | Linux admin
+                                          option(value='Windows Admin')
+                                            | Windows Admin
+                                          option(value='Unix Admin')
+                                            | Unix Admin
+                                          option(value='Citrix')
+                                            | Citrix
+                                          option(value='AIX')
+                                            | AIX
+                                          option(value='Net App Storage')
+                                            | Net App Storage
+                                          option(value='EMC Storage')
+                                            | EMC Storage
+                                            optgroup(label='Data Warehousing')
+                                              option(value='Informatica')
+                                                | Informatica
+                                              option(value='Datastage')
+                                                | DataStage
+                                              option(value='OBIEE')
+                                                | OBIEE
+                                              option(value='Microsoft BI')
+                                                | Microsoft BI
+                                              option(value='MicroStrategy')
+                                                | MicroStrategy
+                                              option(value='Cognos')
+                                                | Cognos
+                                              option(value='Cognos TM1')
+                                                | Cognos TM1
+                                              option(value='Tibco')
+                                                | Tibco
+                                              option(value='SAS')
+                                                | SAS
+                                              option(value='Hadoop')
+                                                | Hadoop
+                                              option(value='Big data Analysis')
+                                                | Big data Analysis
+                                              option(value='R Programming')
+                                                | R Programming
+                                              option(value='Ab Initio')
+                                                | Ab Initio
+                                              option(value='Informatica Data Quality')
+                                                | Informatica Data Quality
+                                              option(value='Informatica MDM')
+                                                | Informatica MDM
+                                              option(value='Business Objects')
+                                                | Business Objects
+                                              option(value='QlikView')
+                                                | QlikView
+                                              option(value='Tableau')
+                                                | Tableau
+                                              option(value='Pentaho')
+                                                | Pentaho
+                                              option(value='Machine Learning using R')
+                                                | Machine Learning using R
+                                              option(value='Datascience')
+                                                | Datascience
+                                              option(value='Datascience using R Programming')
+                                                | Datascience using R Programming
+                                              option(value='Datascience with SAS')
+                                                | Datascience with SAS
+                                              option(value='Datascience with Python')
+                                                | Datascience with Python
+                                              option(value='Apache Spark')
+                                                | Apache Spark
+                                                optgroup(label='Mobile Applications')
+                                                  option(value='Android')
+                                                    | Android
+                                                  option(value='iOS')
+                                                    | iOS
+                                                    optgroup(label='Software Testing')
+                                                      option(value='Manual Testing')
+                                                        | Manual Testing
+                                                      option(value='QTP')
+                                                        | QTP
+                                                      option(value='Selenium')
+                                                        | Selenium
+                                                      option(value='Loadrunner')
+                                                        | Loadrunner
+                                                      option(value='ETL Testing')
+                                                        | ETL Testing
+                                                      option(value='JMeter')
+                                                        | JMeter
+                                                      option(value='')
+                                                        | Test Complete
+                                                      option(value='Soap UI')
+                                                        | Soap UI
+                                                      option(value='Coded UI')
+                                                        | Coded UI
+                                                      option(value='Mobile Application Testing')
+                                                        | Mobile Application Testing
+                                                        optgroup(label='Web Design & Development')
+                                                          option(value='HTML & CSS')
+                                                            | HTML &amp; CSS
+                                                          option(value='PHP & MySQL')
+                                                            | PHP &amp; MySQL
+                                                          option(value='JavaScript')
+                                                            | JavaScript
+                                                          option(value='Node JS')
+                                                            | Node JS
+                                                          option(value='Angular JS')
+                                                            | Angular JS
+                                                          option(value='Bootstrap')
+                                                            | Bootstrap
+                                                          option(value='jQuery')
+                                                            | jQuery
+                                                          option(value='WordPress')
+                                                            | WordPress
+                                                            optgroup(label='Designing')
+                                                              option(value='Photoshop')
+                                                                | Photoshop
+                                                              option(value='Illustrator')
+                                                                | Illustrator
+                                                              option(value='CorelDraw')
+                                                                | CorelDraw
+                                                              option(value='InDesign')
+                                                                | InDesign
+                                                                optgroup(label='Languages')
+                                                                  option(value='Spoken English')
+                                                                    | Spoken English
+                                                                  option(value='Japanese')
+                                                                    | Japanese
+                                                                  option(value='German')
+                                                                    | German
+                                                                  option(value='French')
+                                                                    | French
+                                                                  option(value='Spanish')
+                                                                    | Spanish
+                                                                    optgroup(label='Other Training')
+                                                                      option(value='Digital Marketing')
+                                                                        | Digital Marketing
+                                                                      option(value='SEO')
+                                                                        | SEO
+                                                                      option(value='UNIX Shell Scripting')
+                                                                        | UNIX Shell Scripting
+                                                                      option(value='PERL Scripting')
+                                                                        | PERL Scripting
+                                                                      option(value='Python')
+                                                                        | Python
+                                                                      option(value='DevOps')
+                                                                        | DevOps
+                                                                      option(value='Solaris')
+                                                                        | Solaris
+                                                                      option(value='Windows Power Shell')
+                                                                        | Windows Power Shell
+                                                                      option(value='Ruby on Rails')
+                                                                        | Ruby on Rails
+                                                                      option(value='Ansible')
+                                                                        | Ansible
+                                                                      option(value='Jenkins')
+                                                                        | Jenkins
+                                                                      option(value='Pega')
+                                                                        | Pega
+                                                                      option(value='Scrum Master')
+                                                                        | Scrum Master
+                                                                      option(value='PMP')
+                                                                        | PMP
+                                                                      option(value='ITIL')
+                                                                        | ITIL
+                                                                      option(value='Prince2')
+                                                                        | Prince2
+                                                                      option(value='Tally')
+                                                                        | Tally
+                                                                      option(value='AJAX')
+                                                                        | AJAX
+                                                                      option(value='Hardware & Networking')
+                                                                        | Hardware &amp; Networking
+                                                                      option(value='C & C++')
+                                                                        | C &amp; C++
+                                                                      option(value='MS Office')
+                                                                        | MS Office
+                                                                      option(value='Advanced Excel')
+                                                                        | Advanced Excel
+                                                                      option(value='Bamboo')
+                                                                        | Bamboo
+                                                                        optgroup(label='Not in This List')
+                                                                          option(value='Not in This List')
+                                                                            | Not in This List
+    fieldset
+      span.wpcf7-form-control-wrap.your-location
+        input#contact-location.wpcf7-text(name='Location', maxlength='50', placeholder='Location', required='')
+    fieldset
+      span.wpcf7-form-control-wrap.your-message.demo-message
+        textarea#contact-msg.wpcf7-text(rows='2', name='msg', placeholder='Message', required='')
+    input.btn.btn-info(type='submit', value='Submit', onclick='return check()', name='sub1')
+  // .wpcf7 end
+// end

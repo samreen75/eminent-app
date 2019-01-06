@@ -1,0 +1,247 @@
+extends nav
+
+block append content
+    .hero-wrap
+      .overlay
+      .circle-bg
+      .circle-bg-2
+      .container-fluid
+        .row.no-gutters.d-flex.slider-text.align-items-center.justify-content-center(data-scrollax-parent='true')
+          .col-md-6.ftco-animate.text-center(data-scrollax=" properties: { translateY: '70%' }")
+            p.breadcrumbs(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }")
+              span.mr-2
+                a(href='index.html') Home
+              span Services
+            h1.mb-3.bread(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }") Other Services
+    section.ftco-section.bg-light
+      .container
+        .row.justify-content-center.mb-5.pb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            span.subheading Pricing Plans
+            h2.mb-4 Our Best Pricing
+        .row
+          .col-md-3
+            .block-7
+              .text-center
+                h2.heading Free
+                span.price
+                  sup $
+                  span.number 0
+                span.excerpt.d-block 100% free. Forever
+                a.btn.btn-primary.d-block.px-3.py-3.mb-4(href='#') Get Started
+                h3.heading-2.mb-3 Enjoy All The Features
+                ul.pricing-text
+                  li
+                    strong 150 GB
+                    |  Bandwidth
+                  li
+                    strong 100 GB
+                    |  Storage
+                  li
+                    strong $1.00 / GB
+                    |  Overages
+                  li All features
+          .col-md-3
+            .block-7
+              .text-center
+                h2.heading Startup
+                span.price
+                  sup $
+                  span.number 19
+                span.excerpt.d-block All features are included
+                a.btn.btn-primary.d-block.px-3.py-3.mb-4(href='#') Get Started
+                h3.heading-2.mb-3 Enjoy All The Features
+                ul.pricing-text
+                  li
+                    strong 450 GB
+                    |  Bandwidth
+                  li
+                    strong 400 GB
+                    |  Storage
+                  li
+                    strong $2.00 / GB
+                    |  Overages
+                  li All features
+          .col-md-3
+            .block-7
+              .text-center
+                h2.heading Premium
+                span.price
+                  sup $
+                  span.number 49
+                span.excerpt.d-block All features are included
+                a.btn.btn-primary.d-block.px-3.py-3.mb-4(href='#') Get Started
+                h3.heading-2.mb-3 Enjoy All The Features
+                ul.pricing-text
+                  li
+                    strong 250 GB
+                    |  Bandwidth
+                  li
+                    strong 200 GB
+                    |  Storage
+                  li
+                    strong $5.00 / GB
+                    |  Overages
+                  li All features
+          .col-md-3
+            .block-7
+              .text-center
+                h2.heading Pro
+                span.price
+                  sup $
+                  span.number 99
+                span.excerpt.d-block All features are included
+                a.btn.btn-primary.d-block.px-3.py-3.mb-4(href='#') Get Started
+                h3.heading-2.mb-3 Enjoy All The Features
+                ul.pricing-text
+                  li
+                    strong 450 GB
+                    |  Bandwidth
+                  li
+                    strong 400 GB
+                    |  Storage
+                  li
+                    strong $20.00 / GB
+                    |  Overages
+                  li All features
+    section.ftco-section.services-section
+      .container
+        .row.justify-content-center.mb-5.pb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            span.subheading Services
+            h2.mb-4 Why choose us
+        .row
+          .col-md-4.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.d-block.text-center
+              .d-flex.justify-content-center
+                .icon
+                  span.flaticon-guarantee
+              .media-body.p-2.mt-3
+                h3.heading 100% Uptime Guarantee
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+          .col-md-4.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.d-block.text-center
+              .d-flex.justify-content-center
+                .icon
+                  span.flaticon-shield
+              .media-body.p-2.mt-3
+                h3.heading Safe and Secured
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+          .col-md-4.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.d-block.text-center
+              .d-flex.justify-content-center
+                .icon
+                  span.flaticon-support
+              .media-body.p-2.mt-3
+                h3.heading Our Dedicated Support
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+    section.ftco-section.bg-light
+      .container
+        .row.justify-content-center.mb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            span.subheading Facts
+            h2.mb-4 Your Question
+        .row
+          .col-md-12
+            #accordion
+              .row
+                .col-md-6
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menuone' aria-expanded='true' aria-controls='menuone')
+                        | What is your domain name? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menuone.collapse.show
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menutwo' aria-expanded='false' aria-controls='menutwo')
+                        | How long is my domain name valid? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menutwo.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menu3' aria-expanded='false' aria-controls='menu3')
+                        | Can I sell my domain name? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menu3.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                .col-md-6
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menu4' aria-expanded='false' aria-controls='menu4')
+                        | Can I cancel a domain? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menu4.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menu5' aria-expanded='false' aria-controls='menu5')
+                        | How do I transfer a domain name? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menu5.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                  .card
+                    .card-header
+                      a.card-link(data-toggle='collapse' href='#menu6' aria-expanded='false' aria-controls='menu6')
+                        | How do I setup URL forwarding? 
+                        span.collapsed
+                          i.icon-plus-circle
+                        span.expanded
+                          i.icon-minus-circle
+                    #menu6.collapse
+                      .card-body
+                        p
+                          | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+    include footer
+    #ftco-loader.show.fullscreen
+        svg.circular(width='48px' height='48px')
+            circle.path-bg(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee')
+            circle.path(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00')
+
+        script(src='/javascripts/js/jquery.min.js')
+        script(src='/javascripts/js/jquery-migrate-3.0.1.min.js')
+        script(src='/javascripts/js/popper.min.js')
+        script(src='/javascripts/js/bootstrap.min.js')
+        script(src='/javascripts/js/jquery.easing.1.3.js')
+        script(src='/javascripts/js/jquery.waypoints.min.js')
+        script(src='/javascripts/js/jquery.stellar.min.js')
+        script(src='/javascripts/js/owl.carousel.min.js')
+        script(src='/javascripts/js/jquery.magnific-popup.min.js')
+        script(src='/javascripts/js/aos.js')
+        script(src='/javascripts/js/jquery.animateNumber.min.js')
+        script(src='/javascripts/js/bootstrap-datepicker.js')
+        script(src='/javascripts/js/jquery.timepicker.min.js')
+        script(src='/javascripts/js/scrollax.min.js')
+        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+        script(src='/javascripts/js/google-map.js')
+        script(src='/javascripts/js/main.js')

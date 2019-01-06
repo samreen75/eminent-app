@@ -1,0 +1,27 @@
+extends layout
+
+block append content
+  nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light
+    .container
+      a.navbar-brand(href='/')
+        img.img-fluid.img(src='images/ei_square.png' alt='' style="width: 50px;")
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#ftco-nav' aria-controls='ftco-nav' aria-expanded='false' aria-label='Toggle navigation')
+        span.oi.oi-menu
+        |  Menu
+      #ftco-nav.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.active
+            a.nav-link(href='/') Home
+          li.nav-item
+            a.nav-link(href='/about') About
+          li.nav-item
+            a.nav-link(href='/domain') Domain
+          li.nav-item
+            a.nav-link(href='/hosting') Hosting
+          li.nav-item
+            a.nav-link(href='/blog') Blog
+          li.nav-item
+            a.nav-link(href='/contact') Contact
+          li.nav-item.cta
+            a.nav-link(href='/contact')
+              span Get started

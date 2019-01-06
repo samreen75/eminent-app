@@ -1,0 +1,195 @@
+extends nav
+
+block append content
+    .hero-wrap
+      .overlay
+      .circle-bg
+      .circle-bg-2
+      .container-fluid
+        .row.no-gutters.d-flex.slider-text.align-items-center.justify-content-center(data-scrollax-parent='true')
+          .col-md-6.ftco-animate.text-center(data-scrollax=" properties: { translateY: '70%' }")
+            p.breadcrumbs(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }")
+              span.mr-2
+                a(href='index.html') Home
+              span About
+            h1.mb-3.bread(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }") About Us
+    section.ftco-section.bg-light
+      .container
+        .row.d-md-flex
+          .col-md-6.ftco-animate.img.about-image(style='background-image: url(images/about.jpg);')
+          .col-md-6.ftco-animate.p-md-5
+            .row
+              .col-md-12.nav-link-wrap.mb-5
+                #v-pills-tab.nav.ftco-animate.nav-pills(role='tablist' aria-orientation='vertical')
+                  a#v-pills-whatwedo-tab.nav-link.active(data-toggle='pill' href='#v-pills-whatwedo' role='tab' aria-controls='v-pills-whatwedo' aria-selected='true') What we do
+                  a#v-pills-mission-tab.nav-link(data-toggle='pill' href='#v-pills-mission' role='tab' aria-controls='v-pills-mission' aria-selected='false') Our mission
+                  a#v-pills-goal-tab.nav-link(data-toggle='pill' href='#v-pills-goal' role='tab' aria-controls='v-pills-goal' aria-selected='false') Our goal
+              .col-md-12.d-flex.align-items-center
+                #v-pills-tabContent.tab-content.ftco-animate
+                  #v-pills-whatwedo.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='v-pills-whatwedo-tab')
+                    div
+                      h2.mb-4 Offering Reliable Hosting
+                      p
+                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur
+                  #v-pills-mission.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-mission-tab')
+                    div
+                      h2.mb-4 Exceptional Web Solutions
+                      p
+                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur
+                  #v-pills-goal.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-goal-tab')
+                    div
+                      h2.mb-4 Help Our Customer
+                      p
+                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur
+    section.ftco-section
+      .container
+        .row.justify-content-center.mb-5.pb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            span.subheading Team
+            h2.mb-4 Our Team
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+        .row
+          .col-md-4.mb-5.ftco-animate
+            .block-10
+              .person-info.mb-2
+                span.name Jacob Smith
+                span.position Co Designer
+              img.img-fluid.mb-3(src='images/person_1.jpg' alt='')
+              p
+                | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+          .col-md-4.mb-5.ftco-animate
+            .block-10
+              .person-info.mb-2
+                span.name Aldin Henderson
+                span.position Web Developer
+              img.img-fluid.mb-3(src='images/person_3.jpg' alt='')
+              p
+                | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+          .col-md-4.mb-5.ftco-animate
+            .block-10
+              .person-info.mb-2
+                span.name Mark Willis
+                span.position Lead Web Developer
+              img.img-fluid.mb-3(src='images/person_2.jpg' alt='')
+              p
+                | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+    section#section-counter.ftco-section.ftco-counter.img(style='background-image: url(images/bg_1.jpg);')
+      .container
+        .row.justify-content-center.mb-5.pb-5
+          .col-md-7.text-center.heading-section.heading-section-white.ftco-animate
+            h2.mb-4 Some fun facts
+            span.subheading More than 100,000 websites hosted
+        .row.justify-content-center
+          .col-md-10
+            .row
+              .col-md-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+                .block-18.text-center
+                  .text
+                    strong.number(data-number='2000') 0
+                    span CMS Installation
+              .col-md-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+                .block-18.text-center
+                  .text
+                    strong.number(data-number='100') 0
+                    span Awards Won
+              .col-md-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+                .block-18.text-center
+                  .text
+                    strong.number(data-number='32000') 0
+                    span Registered Domains
+              .col-md-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+                .block-18.text-center
+                  .text
+                    strong.number(data-number='31998') 0
+                    span Satisfied Customers
+    section.ftco-section.testimony-section.bg-light
+      .container
+        .row.justify-content-center.mb-5.pb-5
+          .col-md-7.text-center.heading-section.ftco-animate
+            span.subheading Customer Says
+            h2.mb-4 Our satisfied customer says
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+        .row.ftco-animate
+          .col-md-12
+            .carousel-testimony.owl-carousel.ftco-owl
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_1.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text
+                    p.mb-5
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Dennis Green
+                    span.position Marketing Manager
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_2.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text
+                    p.mb-5
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Dennis Green
+                    span.position Interface Designer
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_3.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text
+                    p.mb-5
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Dennis Green
+                    span.position UI Designer
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_1.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text
+                    p.mb-5
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Dennis Green
+                    span.position Web Developer
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_1.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text
+                    p.mb-5
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Dennis Green
+                    span.position System Analytics
+    include footer
+              
+    #ftco-loader.show.fullscreen
+      svg.circular(width='48px' height='48px')
+        circle.path-bg(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee')
+        circle.path(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00')
+    script(src='/javascripts/js/jquery.min.js')
+    script(src='/javascripts/js/jquery-migrate-3.0.1.min.js')
+    script(src='/javascripts/js/popper.min.js')
+    script(src='/javascripts/js/bootstrap.min.js')
+    script(src='/javascripts/js/jquery.easing.1.3.js')
+    script(src='/javascripts/js/jquery.waypoints.min.js')
+    script(src='/javascripts/js/jquery.stellar.min.js')
+    script(src='/javascripts/js/owl.carousel.min.js')
+    script(src='/javascripts/js/jquery.magnific-popup.min.js')
+    script(src='/javascripts/js/aos.js')
+    script(src='/javascripts/js/jquery.animateNumber.min.js')
+    script(src='/javascripts/js/bootstrap-datepicker.js')
+    script(src='/javascripts/js/jquery.timepicker.min.js')
+    script(src='/javascripts/js/scrollax.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+    script(src='/javascripts/js/google-map.js')
+    script(src='/javascripts/js/main.js')
