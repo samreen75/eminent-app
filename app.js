@@ -7,6 +7,7 @@ var favicon = require('serve-favicon');
 
 var indexRouter = require('./routes/eminent');
 var usersRouter = require('./routes/users');
+var emailer = require('./routes/emailer');
 
 var app = express();
 
