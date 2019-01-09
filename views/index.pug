@@ -9,7 +9,7 @@ block append content
     .container-fluid
       .slider-copy-text.d-md-flex.align-items-center(data-scrollax-parent='true')
         .left-logo.pr-md-4.ftco-animate.align-self-md-center(data-scrollax=" properties: { translateY: '70%' }")
-          img.img-fluid.img(src='images/ei_square.png' alt='' style="width: 200px;")
+          img.img-fluid.img(src='images/ei_square.png' alt='' style="width: 100px;")
         .one-forth.pr-md-4.ftco-animate.align-self-md-center(data-scrollax=" properties: { translateY: '70%' }")
           h1.mb-4(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }")
             | Eminent 
@@ -396,19 +396,18 @@ block append content
           h3#header.text-primary Request For a Free Demo Class
           button.close(type='button', data-dismiss='modal') &times;
         .modal-body
-          form
             .form-group
               label#name-label
-                input#email(type='text', placeholder='Full Name', required='')
+                input#email(type='text', placeholder='Full Name', required)
               br
               label#email-label
-                input#email(type='email', placeholder='Email Address', required='')
+                input#email(type='email', placeholder='Email Address', required)
               br
               label#mobile-label
-                input#email(type='text', maxlength='10', name='phone', onkeypress='return isNumber(event)', placeholder='Mobile Number', required='')
+                input#email(type='text', maxlength='10', name='phone', onkeypress='return isNumber(event)', placeholder='Mobile Number', required)
               br
               label#course-label
-                select#email(name='course', required='')
+                select#email(name='course', required)
                   option(value='')
                     | Select Course Name
                     optgroup(label='Java Training')
@@ -685,20 +684,30 @@ block append content
                                                                                     | Not in This List
               br
               label#location-label
-                input#email(name='location', maxlength='50', placeholder='Location', required='')
+                textarea#email(name='location', maxlength='50', placeholder='Location', required)
               br
               label#message-label
-                textarea#email(rows='2', name='msg', placeholder='Message', required='')
+                textarea#email(rows='2', name='msg', placeholder='Message', required)
               br
               .modal-footer
                 //
                   <button class="btn btn-primary"  data-dismiss="modal" >submit</button>
-                input#contact-submit.btn.btn-success(type='submit', value='Submit', onclick='return check()', name='sub1')
+                input#contact-submit.btn.btn-primary(type='submit', value='Submit', onclick='demoSubmit()', name='sub1')
+              script.
+                  $(document).ready(function() {
+                  alert(&quot;helloo&quot;);
+                  $(&quot;#contact-submit&quot;).click(function(e) {
+                  alert(&quot;helloo hiii&quot;);
+                  });
+                  });
+
             // end of form group
         // end oof modal body
       // end of modal content
     // dialog div end
     // .wpcf7 end
+
+    
 
 
     script(src='/javascripts/js/jquery.min.js')

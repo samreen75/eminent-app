@@ -3,7 +3,6 @@ logo
     width : 50px;
 }
 
-
 .slider-copy-text 
 {
     height: 450px;
@@ -102,10 +101,10 @@ logo
 
 
 #image{
-    height: 300px;
+    height: 280px;
+    
     /* width: 50%;
-    margin-left: 20em;
-    padding-left: 50px; */
+     */
     
 }
 #image1{
@@ -123,16 +122,24 @@ logo
      #scrolling{
          padding: 10px;
      }
+     #home{
+        color : whitesmoke;
+        
+        font-family: FontAwesome;
+        /* position: absolute; */
+        font-size :xx-large;
+        content:"\f015";
+     }
     #email{
         padding-left: 50px;
-        background: transparent;
+        background:transparent;
         border-radius: 5px;
         border: 0px;
         border-bottom: 1px solid black;
         font-size: 15px;
        text-align: justify;
         height: 40px;
-        color:blue;
+        color:cadetblue;
         font-style: oblique;
         font-family: monospace;
     
@@ -143,7 +150,7 @@ logo
     #email-label:before {
     
         content:"\f003";
-        
+        background: transparent;
         color :blue;
         font-family: FontAwesome;
         font-size: 2x;
@@ -178,7 +185,7 @@ logo
     
     #modalcontent{
     
-        background-image: #bdeff5;
+        background-image: url(/images/modalimg.jpg);
         background-repeat: no-repeat;
         background-position: 100%;
 	}
@@ -189,9 +196,10 @@ logo
         position: relative;
     }
     #course-label:before {
-        color :blue;
+        color :cadetblue;
         
         font-family: FontAwesome;
+        
         position: absolute;
         top: 5px;
         left: 10px;
@@ -225,6 +233,9 @@ logo
         font-weight: bold;
         font-size: 35px;
         margin-top: 0;
+    }
+    input{
+        background: transparent;
     }
     #header{
         padding-left: 20px;
