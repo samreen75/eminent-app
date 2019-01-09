@@ -692,7 +692,7 @@ block append content
               .modal-footer
                 //
                   <button class="btn btn-primary"  data-dismiss="modal" >submit</button>
-                input#contact-submit.btn.btn-primary(type='submit', value='Submit', onclick='demoSubmit()', name='sub1')
+                input#contact-submit.btn.btn-primary(type='submit', value='Submit', onclick='sendEmail()', name='sub1')
               script.
                   $(document).ready(function() {
                   alert(&quot;helloo&quot;);
@@ -727,3 +727,4 @@ block append content
     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
     script(src='/javascripts/js/google-map.js')
     script(src='/javascripts/js/main.js')
+    script(src='/javascripts/js/AjaxUtil.js')
