@@ -34,6 +34,10 @@ router.get('/pop', function(req, res, next) {
 
 router.post('/emailService', function(req, res) {
 	console.log("helloooo u r in emailservice");
+	console.log("helloooo u r in nnbnb emailservice"+req);
+    var name= req.body.name;
+    console.log("data");
+    console.log("name--->"+req.body);
 	// var name=req.body.name;
 	// var email=req.body.email;
 	// var contact=req.body.contact;

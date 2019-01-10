@@ -144,6 +144,20 @@ logo
         font-family: monospace;
     
     }
+    #msg{
+        padding-left: 50px;
+        background:transparent;
+        border-radius: 5px;
+        border: 0px;
+        border-bottom: 1px solid black;
+        font-size: 15px;
+       text-align: justify;
+        height: 40px;
+        color:cadetblue;
+        font-style: oblique;
+        font-family: monospace;
+    
+    }
     #email-label{
         position: relative;
     }
