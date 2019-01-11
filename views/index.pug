@@ -687,19 +687,19 @@ block append content
                 textarea#email(name='location', maxlength='50', placeholder='Location', required)
               br
               label#message-label
-                textarea#email(rows='2', name='msg', placeholder='Message', required)
+                textarea#msg.msg(rows='2', name='msg', placeholder='Message', required)
               br
               .modal-footer
                 //
                   <button class="btn btn-primary"  data-dismiss="modal" >submit</button>
-                input#contact-submit.btn.btn-primary(type='submit', value='Submit', onclick='sendEmail()', name='sub1')
-              script.
-                  $(document).ready(function() {
-                  alert(&quot;helloo&quot;);
-                  $(&quot;#contact-submit&quot;).click(function(e) {
-                  alert(&quot;helloo hiii&quot;);
-                  });
-                  });
+                input#contact-submit.btn.btn-primary(type='submit', value='Submit', onclick='demo()', name='sub1')
+              //- script.
+              //-     $(document).ready(function() {
+              //-     alert(&quot;helloo&quot;);
+              //-     $(&quot;#contact-submit&quot;).click(function(e) {
+              //-     alert(&quot;helloo hiii&quot;);
+              //-     });
+              //-     });
 
             // end of form group
         // end oof modal body
