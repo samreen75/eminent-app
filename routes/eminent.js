@@ -1,5 +1,7 @@
 var express = require('express');
+
 var router = express.Router();
+var emailer = require('./emailer');
 
 
 /* GET home page. */
@@ -33,23 +35,22 @@ router.get('/pop', function(req, res, next) {
 });
 
 router.post('/emailService', function(req, res) {
-	console.log("helloooo u r in emailservice");
-	console.log("helloooo u r in nnbnb emailservice"+req);
-    var name= req.body.name;
-    console.log("data");
-    console.log("name--->"+req.body);
-	// var name=req.body.name;
-	// var email=req.body.email;
-	// var contact=req.body.contact;
-	// var message=req.body.message;
-	// console.log("email service"+name+" - "+email+" - "+contact + " - "+message);
-	// var emailResponse='';
-	// emailResponse =emailer.sendMail(name,email,contact,message);	
-	// //console.log(emailResponse.value)
+	console.log("emailService called");
+	var name=req.body.name;
+	var email=req.body.email;
+	var mobile=req.body.mobile;
+	var course=req.body.course;
+	var location=req.body.location;
+	var message=req.body.message;
+	console.log("email service : "+name+" - "+email+" - "+mobile + " - "+course+ " - "+location+ " - "+message);
+	var emailResponse='';
+	
+	// emailResponse =emailer.sendMail(name,email,mobile,course,location,message);	
+	// console.log(emailResponse.value)
 	// if(emailResponse=='error')
-	// res.json({"status":"error"});
+	// 	res.json({"status":"error"});
 	// else
-	// res.json({"status":"success"});
+	// 	res.json({"status":"success"});
 
 });
  
