@@ -1,6 +1,6 @@
-logo
+.nav-top-margin
 {
-    width : 50px;
+    margin-top: 10px;
 }
 
 .slider-copy-text 
@@ -130,7 +130,21 @@ logo
         font-size :xx-large;
         content:"\f015";
      }
-    #email{
+    .pop_up_inputs{
+        padding-left: 50px;
+        background:transparent;
+        border-radius: 5px;
+        border: 0px;
+        border-bottom: 1px solid black;
+        font-size: 15px;
+       text-align: justify;
+        height: 40px;
+        /* color:cadetblue; */
+        font-style: oblique;
+        font-family: monospace;
+    
+    }
+    .pop_up_msg{
         padding-left: 50px;
         background:transparent;
         border-radius: 5px;
@@ -144,39 +158,35 @@ logo
         font-family: monospace;
     
     }
-    #msg{
-        padding-left: 50px;
-        background:transparent;
-        border-radius: 5px;
-        border: 0px;
-        border-bottom: 1px solid black;
-        font-size: 15px;
-       text-align: justify;
-        height: 40px;
-        color:cadetblue;
-        font-style: oblique;
-        font-family: monospace;
-    
-    }
-    #email-label{
+    .email-label{
         position: relative;
     }
-    #email-label:before {
+    .email-label:before {
     
         content:"\f003";
         background: transparent;
-        color :blue;
+        color :cadetblue;
         font-family: FontAwesome;
         font-size: 2x;
         position: absolute;
         top: 5px;
         left: 10px;
     }
-    #name-label{
+
+    .modalcontent{
+    
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+    
+    .form-control{
+        background: transparent;
+    }
+    .name-label{
         position: relative;
     }
-    #name-label:before {
-        color :blue;
+    .name-label:before {
+        color :cadetblue;
         
         font-family: FontAwesome;
         position: absolute;
@@ -184,11 +194,12 @@ logo
         left: 10px;
         content:"\f007";
     }
-    #mobile-label{
+    .mobile-label{
         position: relative;
+        
     }
-    #mobile-label:before {
-        color :blue;
+    .mobile-label:before {
+        color :cadetblue;
         
         font-family: FontAwesome;
         position: absolute;
@@ -197,33 +208,32 @@ logo
         content:"\f10b";
     }
     
-    #modalcontent{
-    
-        background-image: url(/images/modalimg.jpg);
-        background-repeat: no-repeat;
-        background-position: 100%;
-	}
-    .form-control{
-        background: transparent;
-    }
-    #course-label{
+    .course-label{
         position: relative;
     }
-    #course-label:before {
+    .course-label:before {
         color :cadetblue;
+        
+        font-family: FontAwesome;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        content:"\f007";
+
+        /* color :cadetblue;
         
         font-family: FontAwesome;
         
         position: absolute;
         top: 5px;
         left: 10px;
-        content:"\f040";
+        content:"\f040"; */
     }
-    #location-label{
+    .location-label{
         position: relative;
     }
-    #location-label:before {
-        color :blue;
+    .location-label:before {
+        color :cadetblue;
         
         font-family: FontAwesome;
         position: absolute;
@@ -231,11 +241,11 @@ logo
         left: 10px;
         content:"\f015";
     }
-    #message-label{
+    .message-label{
         position: relative;
     }
-    #message-label:before {
-        color :blue;
+    .message-label:before {
+        color :cadetblue;
         
         font-family: FontAwesome;
         position: absolute;
@@ -254,10 +264,10 @@ logo
     #header{
         padding-left: 20px;
         background: transparent;
-                font-size: 25px;
+        font-size: 17px;
        text-align: justify;
         height: 5px;
-        color:blue;
+        color:cadetblue;
         font-style: oblique;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
@@ -266,4 +276,8 @@ logo
 .zero-space
 {
     padding: 0 !important;
+}
+.user-details
+{
+    background-color: azure;
 }
