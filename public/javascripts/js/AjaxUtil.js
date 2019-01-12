@@ -1,36 +1,33 @@
-function sendEmail() {
-    
-    
-    alert('send email here');
+var AjaxUtils = {
+    demo: function() {
+        console.log("inside demo");
 
+        var name = $("#user-name").val();
+        var email = $("#user-email").val();
+        var mobile = $("#user-mobile").val();
+        var course = $("#user-course").val();
+        var location = $("#user-location").val();
+        var message = $("#user-message").val();
+        alert(name+"-"+email+"-"+mobile+"-"+course+"-"+location+"-"+message);
 
-}
-
-function demo(){
-    alert("value-->>");
-
-    var name = document.getElementById("msg").value;
-    alert("value-->>"+name);
-    var data="";
-    
-    name=document.getElementsByClassName("msg").value;
-    var location=document.getElementsByName("location").value;
-     ///alert("value-->>"+data);
-}
-    $.ajax({
-        type: "post",
-        
-        url: "http://localhost:3000/emailService",
-        data: "name=" + name ,
-        success : function(data){
-            alert("in ajax-->>"+name);
-
-            if (text == "success"){
-                $("#contact-submit")[0].reset();
-                submitMSG(true, "Message Submitted!");
-                alert("value-->>"+text);
-            }
-            
+        if (name !== null && name !== '' && email !== null && email !== '' && mobile !== null && mobile !== '' && course !== null && course !== '' && location !== null && location !== ''&& message !== null && message !== '') {
+            $.ajax({
+                type: "post",
+                url: "http://localhost:3000/emailService",
+                data: "name=" + name + "&email=" + email + "&mobile=" + mobile + "&course=" + course + "&location=" + location + "&message=" + message,
+                // success: function(text) {
+                //     if (text == "success") {
+                //         $("#contactForm")[0].reset();
+                //         submitMSG(true, "Message Submitted!")
+                //     } else {
+                //         $("#contactForm")[0].reset();
+                //         submitMSG(true, "Message Submitted!")
+                //     }
+                // }
+            });
+        } 
+        else {
+            alert("Please fill all the details");
         }
-    });
-  alert("value after ajax-->>"+text);
+    }
+}

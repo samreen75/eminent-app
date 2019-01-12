@@ -388,26 +388,26 @@ block append content
       circle.path-bg(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee')
       circle.path(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00')
       
-      .container
+      
   #mymodal.modal.fade
     .modal-dialog.modal-dialog-centered
-      #modalcontent.modal-content
+      .modalcontent.modal-content
         .modal-header
           h3#header.text-primary Request For a Free Demo Class
           button.close(type='button', data-dismiss='modal') &times;
-        .modal-body
+        .user-details.modal-body
             .form-group
-              label#name-label
-                input#email(type='text', placeholder='Full Name', required)
+              label.name-label
+                input#user-name.pop_up_inputs(type='text', placeholder='Full Name', required)
               br
-              label#email-label
-                input#email(type='email', placeholder='Email Address', required)
+              label.email-label
+                input#user-email.pop_up_inputs(type='email', placeholder='Email Address', required)
               br
-              label#mobile-label
-                input#email(type='text', maxlength='10', name='phone', onkeypress='return isNumber(event)', placeholder='Mobile Number', required)
+              label.mobile-label
+                input#user-mobile.pop_up_inputs(type='text', maxlength='10', name='phone', onkeypress='return isNumber(event)', placeholder='Mobile Number', required)
               br
-              label#course-label
-                select#email(name='course', required)
+              label.course-label
+                select#user-course.pop_up_inputs(name='course', required)
                   option(value='')
                     | Select Course Name
                     optgroup(label='Java Training')
@@ -683,29 +683,15 @@ block append content
                                                                                   option(value='Not in This List')
                                                                                     | Not in This List
               br
-              label#location-label
-                textarea#email(name='location', maxlength='50', placeholder='Location', required)
+              label.location-label
+                textarea#user-location.pop_up_inputs(name='location', maxlength='50', placeholder='Location', required)
               br
-              label#message-label
-                textarea#msg.msg(rows='2', name='msg', placeholder='Message', required)
-              br
-              .modal-footer
-                //
-                  <button class="btn btn-primary"  data-dismiss="modal" >submit</button>
-                input#contact-submit.btn.btn-primary(type='submit', value='Submit', onclick='demo()', name='sub1')
-              //- script.
-              //-     $(document).ready(function() {
-              //-     alert(&quot;helloo&quot;);
-              //-     $(&quot;#contact-submit&quot;).click(function(e) {
-              //-     alert(&quot;helloo hiii&quot;);
-              //-     });
-              //-     });
+              label.message-label
+                textarea#user-message.pop_up_msg(rows='2', name='msg', placeholder='Message', required)
+        #Submit-button  
+          .modal-footer
+            input#contact-submit.btn.btn-primary(type='submit', value='Submit', onclick='AjaxUtils.demo()', name='sub1')
 
-            // end of form group
-        // end oof modal body
-      // end of modal content
-    // dialog div end
-    // .wpcf7 end
 
     
 
