@@ -45,12 +45,12 @@ router.post('/emailService', function(req, res) {
 	console.log("email service : "+name+" - "+email+" - "+mobile + " - "+course+ " - "+location+ " - "+message);
 	var emailResponse='';
 	
-	// emailResponse =emailer.sendMail(name,email,mobile,course,location,message);	
-	// console.log(emailResponse.value)
-	// if(emailResponse=='error')
-	// 	res.json({"status":"error"});
-	// else
-	// 	res.json({"status":"success"});
+	emailResponse =emailer.sendMail(name,email,mobile,course,location,message);	
+	console.log(emailResponse.value)
+	if(emailResponse=='error')
+	res.json({"status":"error"});
+	else
+	res.json({"status":"success"});
 
 });
  
