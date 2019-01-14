@@ -5,7 +5,7 @@ module.exports = {
         let response = 'success';
 
         var nodemailer = require('nodemailer');
-
+         console.log("inside emailer");
         // Create the transporter with the required configuration for Gmail
         // change the user and pass !
         var transporter = nodemailer.createTransport({
@@ -14,7 +14,7 @@ module.exports = {
             secure: true, // use SSL
             auth: {
                 user: 'dontreply@eminentinnovative.com',
-                pass: 'providepasswordhere' 
+                pass: 'Passsword'
             }
 
         });

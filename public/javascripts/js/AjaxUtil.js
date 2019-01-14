@@ -8,7 +8,7 @@ var AjaxUtils = {
         var course = $("#user-course").val();
         var location = $("#user-location").val();
         var message = $("#user-message").val();
-        alert(name+"-"+email+"-"+mobile+"-"+course+"-"+location+"-"+message);
+        //salert(name+"-"+email+"-"+mobile+"-"+course+"-"+location+"-"+message);
 
         if (name !== null && name !== '' && email !== null && email !== '' && mobile !== null && mobile !== '' && course !== null && course !== '' && location !== null && location !== ''&& message !== null && message !== '') 
         {
