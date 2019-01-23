@@ -6,8 +6,10 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "consolidate": "^0.15.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "ejs": "^2.6.1",
     "express": "~4.16.0",
     "html5-marquee": "^0.2.0",
     "http-errors": "~1.6.2",
@@ -15,5 +17,6 @@
     "nodemailer": "^5.1.1",
     "pug": "2.0.0-beta11",
     "serve-favicon": "^2.5.0"
+   
   }
 }

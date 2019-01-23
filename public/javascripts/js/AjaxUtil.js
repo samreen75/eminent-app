@@ -14,15 +14,15 @@ var AjaxUtils = {
         {
             user_details= "name=" + name + "&email=" + email + "&mobile=" + mobile + "&course=" + course + "&location=" + location + "&message=" + message,
             $.post('/emailService',user_details, function(text) {
-                // success: function(text) {
-                //     if (text == "success") {
-                //         $("#contactForm")[0].reset();
-                //         submitMSG(true, "Message Submitted!")
-                //     } else {
-                //         $("#contactForm")[0].reset();
-                //         submitMSG(true, "Message Submitted!")
-                //     }
-                // }
+                success: function(text) {
+                    if (text == "success") {
+                        $("#contactForm")[0].reset();
+                        submitMSG(true, "Message Submitted!")
+                    } else {
+                        $("#contactForm")[0].reset();
+                        submitMSG(true, "Message Submitted!")
+                    }
+                }
             });
         } 
         else {

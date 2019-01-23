@@ -10,7 +10,7 @@ block append content
           .col-md-6.ftco-animate.text-center(data-scrollax=" properties: { translateY: '70%' }")
             p.breadcrumbs(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }")
               span.mr-2
-                a(href='index.html') Home
+                a(href='/') Home
               span Contact
             h1.mb-3.bread(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }") Contact
     section.ftco-section.contact-section.ftco-degree-bg
@@ -48,27 +48,8 @@ block append content
                 textarea.form-control(name='' id='' cols='30' rows='7' placeholder='Message')
               .form-group
                 input.btn.btn-primary.py-3.px-5(type='submit' value='Send Message')
-          #map.col-md-6
+          //- #map.col-md-6
     include footer
-    #ftco-loader.show.fullscreen
-        svg.circular(width='48px' height='48px')
-            circle.path-bg(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee')
-            circle.path(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00')
+    
 
-        script(src='/javascripts/js/jquery.min.js')
-        script(src='/javascripts/js/jquery-migrate-3.0.1.min.js')
-        script(src='/javascripts/js/popper.min.js')
-        script(src='/javascripts/js/bootstrap.min.js')
-        script(src='/javascripts/js/jquery.easing.1.3.js')
-        script(src='/javascripts/js/jquery.waypoints.min.js')
-        script(src='/javascripts/js/jquery.stellar.min.js')
-        script(src='/javascripts/js/owl.carousel.min.js')
-        script(src='/javascripts/js/jquery.magnific-popup.min.js')
-        script(src='/javascripts/js/aos.js')
-        script(src='/javascripts/js/jquery.animateNumber.min.js')
-        script(src='/javascripts/js/bootstrap-datepicker.js')
-        script(src='/javascripts/js/jquery.timepicker.min.js')
-        script(src='/javascripts/js/scrollax.min.js')
-        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
-        script(src='/javascripts/js/google-map.js')
-        script(src='/javascripts/js/main.js')
+       

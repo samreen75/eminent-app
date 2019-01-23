@@ -10,14 +10,14 @@ block append content
           .col-md-6.ftco-animate.text-center(data-scrollax=" properties: { translateY: '70%' }")
             p.breadcrumbs(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }")
               span.mr-2
-                a(href='index.html') Home
+                a(href='/') Home
               span Services
             h1.mb-3.bread(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }") Other Services
     section.ftco-section.bg-light
       .container
         .row.justify-content-center.mb-5.pb-5
           .col-md-7.text-center.heading-section.ftco-animate
-            span.subheading Pricing Plans
+            span#services.subheading Pricing Plans
             h2.mb-4 Our Best Pricing
         .row
           .col-md-3
@@ -108,7 +108,7 @@ block append content
       .container
         .row.justify-content-center.mb-5.pb-5
           .col-md-7.text-center.heading-section.ftco-animate
-            span.subheading Services
+            span#services.subheading Services
             h2.mb-4 Why choose us
         .row
           .col-md-4.d-flex.align-self-stretch.ftco-animate
@@ -142,7 +142,7 @@ block append content
       .container
         .row.justify-content-center.mb-5
           .col-md-7.text-center.heading-section.ftco-animate
-            span.subheading Facts
+            span#services.subheading Facts
             h2.mb-4 Your Question
         .row
           .col-md-12
@@ -223,25 +223,6 @@ block append content
                         p
                           | When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
     include footer
-    #ftco-loader.show.fullscreen
-        svg.circular(width='48px' height='48px')
-            circle.path-bg(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee')
-            circle.path(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00')
+    
 
-        script(src='/javascripts/js/jquery.min.js')
-        script(src='/javascripts/js/jquery-migrate-3.0.1.min.js')
-        script(src='/javascripts/js/popper.min.js')
-        script(src='/javascripts/js/bootstrap.min.js')
-        script(src='/javascripts/js/jquery.easing.1.3.js')
-        script(src='/javascripts/js/jquery.waypoints.min.js')
-        script(src='/javascripts/js/jquery.stellar.min.js')
-        script(src='/javascripts/js/owl.carousel.min.js')
-        script(src='/javascripts/js/jquery.magnific-popup.min.js')
-        script(src='/javascripts/js/aos.js')
-        script(src='/javascripts/js/jquery.animateNumber.min.js')
-        script(src='/javascripts/js/bootstrap-datepicker.js')
-        script(src='/javascripts/js/jquery.timepicker.min.js')
-        script(src='/javascripts/js/scrollax.min.js')
-        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
-        script(src='/javascripts/js/google-map.js')
-        script(src='/javascripts/js/main.js')
+       

@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -11,13 +12,22 @@ var emailer = require('./routes/emailer');
 
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+// // view engine setup
+// app.engine('html', es6Renderer);
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'html');
+// //app.engine('html',require('ejs').renderFile);
+
+app.configure(function(){
+  app.use(express.static(__dirname + '/views'));
+  app.use(express.logger('dev'));
+  app.use(express.bodyParser());
+  app.use(express.methodeOverride());
+  app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 
 // uncomment after placing favicon in /public
-app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 
+});
 
 app.use(logger('dev'));
 app.use(express.json());

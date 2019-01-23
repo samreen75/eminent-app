@@ -99,7 +99,10 @@
         color: #3a4348; 
 }
 
-
+#services{
+    font-size: 40px;
+    font-weight: 100;
+}
 #image{
     height: 280px;
     
@@ -139,7 +142,7 @@
         font-size: 15px;
        text-align: justify;
         height: 40px;
-        /* color:cadetblue; */
+        color:cadetblue;
         font-style: oblique;
         font-family: monospace;
     
@@ -158,10 +161,10 @@
         font-family: monospace;
     
     }
-    .email-label{
+    #email-label{
         position: relative;
     }
-    .email-label:before {
+    #email-label:before {
     
         content:"\f003";
         background: transparent;
@@ -182,10 +185,10 @@
     .form-control{
         background: transparent;
     }
-    .name-label{
+    #name-label{
         position: relative;
     }
-    .name-label:before {
+    #name-label:before {
         color :cadetblue;
         
         font-family: FontAwesome;
@@ -194,11 +197,11 @@
         left: 10px;
         content:"\f007";
     }
-    .mobile-label{
+    #mobile-label{
         position: relative;
         
     }
-    .mobile-label:before {
+    #mobile-label:before {
         color :cadetblue;
         
         font-family: FontAwesome;
@@ -208,17 +211,17 @@
         content:"\f10b";
     }
     
-    .course-label{
+    #course-label{
         position: relative;
     }
-    .course-label:before {
+    #course-label:before {
         color :cadetblue;
         
         font-family: FontAwesome;
         position: absolute;
         top: 5px;
         left: 10px;
-        content:"\f007";
+        content:"\f14b";
 
         /* color :cadetblue;
         
@@ -229,10 +232,10 @@
         left: 10px;
         content:"\f040"; */
     }
-    .location-label{
+    #location-label{
         position: relative;
     }
-    .location-label:before {
+    #location-label:before {
         color :cadetblue;
         
         font-family: FontAwesome;
@@ -241,11 +244,11 @@
         left: 10px;
         content:"\f015";
     }
-    .message-label{
+    #message-label{
         position: relative;
     }
-    .message-label:before {
-        color :cadetblue;
+    #message-label:before {
+        color :cadetblue;l
         
         font-family: FontAwesome;
         position: absolute;

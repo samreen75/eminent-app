@@ -6,7 +6,8 @@ var emailer = require('./emailer');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Eminent Innovative Infotech' });
+	//res.render('index', { title: 'Eminent Innovative Infotech' });
+res.sendFile('./views/index.html');
 });
 
 router.get('/about', function(req, res, next) {
@@ -46,7 +47,7 @@ router.post('/emailService', function(req, res) {
 	var emailResponse='';
 	
 	emailResponse =emailer.sendMail(name,email,mobile,course,location,message);	
-	console.log(emailResponse.value)
+	console.log("in respones"+emailResponse.value)
 	if(emailResponse=='error')
 	res.json({"status":"error"});
 	else
